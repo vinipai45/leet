@@ -20,12 +20,8 @@ def get_indexs(arr:list,target:int):
 def main():
 
     nums = list(map(int, input().split())) 
-    target = int(input()) #9
+    target = int(input()) 
 
-    # temp_arr = nums
-    # temp_arr.sort()
-    # print(nums)
-    # removed_larger_number = eliminate_number_larger_than_target(temp_arr,target)
     result = get_indexs(nums,target)
 
     print(result)
