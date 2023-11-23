@@ -7,11 +7,9 @@ def get_maximum_subarray(arr):
     for i in range(len(arr)):
         sum = sum + arr[i]
 
-        if(sum < arr[i]):
-            sum = arr[i]
+        sum = max(sum,arr[i])
         
-        if(max_sum < sum):
-            max_sum = sum
+        max_sum = max(max_sum,sum)
 
     return max_sum
 
